@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户管理</title>
+</head>
+<body>
+用户管理页，采用第二种引用方式 ，实现多页面应用共享一个config文件
+
+<script src="../../js/require/2.1.11/require.js"></script>
+<script>
+    require(['../../js/ba_require'], function () {
+        require(['app/md_user/app_user']);
+    });
+</script>
+</body>
+</html>
