@@ -1,13 +1,15 @@
 (function (window) {
     'use strict';
-   // basUrl Ç°Ãæ¼Ó/ ±íÊ¾´ÓµØÖ·µÄ¸ùÄ¿Â¼¿ªÊ¼ £¬Èç¹û²»¼Ó/Ôò´ÓÒıÓÃÈë¿ÚÎÄ¼şµÄµ±Ç°ÎÄ¼ş¼Ğ¿ªÊ¼²éÕÒ
-	 var config = {
+    var config = {
+        // basUrl å‰é¢åŠ / è¡¨ç¤ºä»åœ°å€çš„æ ¹ç›®å½•å¼€å§‹ ï¼Œå¦‚æœä¸åŠ /åˆ™ä»å¼•ç”¨å…¥å£æ–‡ä»¶çš„å½“å‰æ–‡ä»¶å¤¹å¼€å§‹æŸ¥æ‰¾
+        //æ–‡ä»¶å®šä¹‰ä¸èƒ½ç”¨ä¸­- å¦åˆ™ä¼šæ‰¾ä¸åˆ°
         baseUrl: '/amd/js',
         paths: {
-            app:'../app',
+            app: '../app',
             //
 
-            jquery: 'jquery/2.1.4/jquery.min'
+            jquery: 'jquery/2.1.4/jquery.min',
+            dialog: 'mod/mod_init'
         }
     };
     window.require.config(config);
