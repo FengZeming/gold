@@ -4,8 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+	    "init": "cd appfe && npm install --local",
+	    "clean": "cd appfe && gulp clean --web",
+	    "dev": "cd appfe && gulp --web",
+	    "watch": "cd appfe && gulp watch --web",
+	    "build": "cd appfe && gulp build --web"
+	},
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "require-dir": "^0.3.1"
+  }
 }
