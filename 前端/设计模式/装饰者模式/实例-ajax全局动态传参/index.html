@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>装饰者模式-ajax全局动态传参</title>
+	</head>
+
+	<body>
+
+		<button id="js_btn-test">ajax提交测试</button>
+
+		<script src="../../../static/js/lib/jquery-1.11.0.min.js"></script>
+		<script src="../pattern.js"></script>
+		<script type="text/javascript">
+			var oBtn = $('#js_btn-test');
+
+			function getToken() {
+
+				return 'token';
+			}
+
+			function ajax(type, url, data) {
+			
+				$.ajax({
+					type: type || "get",
+					url: url || "404.html",
+					data: data || {},
+					ssuccess: function (data) {
+						console.log(data.msg);
+
+					}
+				});
+
+			}
+
+			ajax = ajax.before(function (type, url, data) {
+				data.token = getToken();
+
+			});
+
+			oBtn.on('click', function () {
+				ajax(null,  "./result.json",{name:'ajax'});
+			});
+		</script>
+
+	</body>
+
+</html>
