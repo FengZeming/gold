@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>函数柯里化</title>
+</head>
+<body>
+
+
+<script>
+    //未currying
+    var cost = (function () {
+        var args = [];
+
+        return function () {
+            //如果没有参数则执行统计
+            if (arguments.length === 0) {
+                var money = 0;
+                for (var i = 0, l = args.length; i < l; i++) {
+                    money += args[i];
+                }
+                return money;
+            } else {
+                //如果有参数则暂时缓存到args数组中
+                //动态保存参数
+                [].push.apply(args, arguments);
+            }
+        };
+    })();
+
+    var money = 0;
+    money = cost(100, 400);
+    money = cost(200);
+    money = cost(300);
+    money = cost();
+    console.log(money);
+</script>
+
+</body>
+</html>
