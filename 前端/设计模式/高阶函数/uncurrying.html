@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>泛化</title>
+</head>
+<body>
+
+
+<script>
+
+    Function.prototype.uncurrying = function () {
+        var self = this;
+        return function () {
+            return Function.prototype.call.apply(self, arguments);
+        }
+    };
+
+    Array.prototype.pushObject = function (index, val) {
+
+        if (!this.length) {
+            this.length = 0;
+        }
+        if (!this[index]) {
+            this.length++;
+        }
+        this[index] = val;
+        return this;
+    };
+
+
+
+    for (var i = 0, fn, ary = ['push', 'spliceObject', 'pushObject', 'splice', 'shift', 'forEach']; fn = ary[i++];) {
+        Array[fn] = Array.prototype[fn].uncurrying();
+    }
+
+    var obj = {};
+
+    Array.pushObject(obj, 'aaaa', 1);
+    Array.pushObject(obj, 'aaaa', 2);
+    Array.pushObject(obj, 'cccc', 1);
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
