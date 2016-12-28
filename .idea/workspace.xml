@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="160b99bf-9f05-4b77-9403-62d542e01fc4" name="默认" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/前端/设计模式/高阶函数/un.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/前端/设计模式/高阶函数/uncurrying.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/前端/css/居中.html" afterPath="$PROJECT_DIR$/前端/css/居中.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/前端/设计模式/高阶函数/un.js" afterPath="" />
     </list>
     <ignored path="gold.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,18 +29,6 @@
             <state relative-caret-position="645">
               <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="un.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/前端/设计模式/高阶函数/un.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="664" column="28" selection-start-line="664" selection-start-column="28" selection-end-line="664" selection-end-column="28" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -284,12 +269,12 @@
       <updated>1482712575169</updated>
       <workItem from="1482712576688" duration="3082000" />
       <workItem from="1482797805924" duration="715000" />
-      <workItem from="1482883672893" duration="9380000" />
+      <workItem from="1482883672893" duration="9421000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13177000" />
+    <option name="totallyTimeSpent" value="13218000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -368,9 +353,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="386">
           <caret line="664" column="28" selection-start-line="664" selection-start-column="28" selection-end-line="664" selection-end-column="28" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
