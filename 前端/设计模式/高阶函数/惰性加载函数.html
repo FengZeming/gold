@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		惰性加载函数
+
+		<script type="text/javascript">
+			var addEvent = function (e, type, handler) {
+				if(window.addEventListener) {
+					addEvent = function (e, type, handler) {
+						e.addEventListener(type, handler, false);
+					}
+				}
+
+				if(window.attachEvent) {
+					addEvent = function (e, type, handler) {
+						e.attachEvent('on' + type, handler);
+					}
+				}
+
+			};
+		</script>
+	</body>
+
+</html>
