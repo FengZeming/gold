@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="dev" style="width: 100px;height: 100px;background: #eee;border: 1px solid #ccc;"></div>
+
+<script src="shake.js"></script>
+
+<script>
+    animate.shake ( {
+        element    : document.getElementById ( 'dev' ) ,
+        beforeBack : function () {
+            this.style.borderColor = 'red';
+        }
+    } );
+</script>
+
+</body>
+</html>

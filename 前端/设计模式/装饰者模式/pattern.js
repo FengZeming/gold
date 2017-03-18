@@ -5,8 +5,10 @@
 
 // 在函数之前
 Function.prototype.before = function (beforefn) {
+
 	var _self = this;
 	return function () {
+			debugger;
 		if(beforefn.apply(this, arguments) === false) {
 			return;
 		}
