@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!--   manifest:  |URL|定义一个 URL，在这个 URL 上描述了文档的缓存信息。-->
+<html lang="zh-CN" manifest="">
+<head>
+    <!--标签描述了基本的链接地址/链接目标，该标签作为HTML文档中所有的链接标签的默认链接:-->
+   <!-- <base href="http://localhost:63342/webstrom_workspase/front_02_HTML5" target="_blank">-->
+
+    <!--
+    https://segmentfault.com/a/1190000004279791
+    meta标签描述了一些基本的元数据。
+     <meta> 标签提供了元数据.元数据也不显示在页面上，但会被浏览器解析。
+     META 元素通常用于指定网页的描述，关键词，文件的最后修改时间，作者，和其他元数据。
+     元数据可以使用于浏览器（如何显示内容或重新加载页面），搜索引擎（关键词），或其他Web服务。
+     <meta> 一般放置于 <head> 区域-->
+
+    <!--
+        元数据通常以 名称/值 对出现。
+        如果没有提供 name 属性，那么名称/值对中的名称会采用 http-equiv 属性的值。
+        meta标签共有两个属性，分别是http-equiv属性和name属性。
+        name属性主要用于描述网页，比如网页的关键词，叙述等。与之对应的属性值为content，content中的内容是对name填入类型的具体描述，便于搜索引擎抓取。meta标签中name属性语法格式是：
+    -->
+
+    <meta charset="UTF-8">
+    <!--用于告诉搜索引擎，你网页的关键字-->
+    <meta name="keywords" content="Lxxyx,博客，文科生，前端">
+    <!--用于告诉搜索引擎，你网站的主要内容。-->
+    <meta name="description" content="文科生，热爱前端与编程。目前大二，这是我的前端博客">
+    <!--viewport(移动端的窗口)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- robots(定义搜索引擎爬虫的索引方式)-->
+    <meta name="robots" content="none">
+    <!--作者-->
+    <meta name="author" content="Lxxyx,841380530@qq.com">
+    <!-- generator(网页制作软件)-->
+    <meta name="generator" content="Sublime Text3">
+    <!-- copyright(版权)-->
+    <meta name="copyright" content="Lxxyx">
+
+    <!--evisit-after(搜索引擎爬虫重访时间)-->
+    <meta name="revisit-after" content="7 days">
+    <!--renderer(双核浏览器渲染方式)-->
+    <meta name="renderer" content="webkit"> <!--//默认webkit内核-->
+    <meta name="renderer" content="ie-comp"> <!--//默认IE兼容模式-->
+    <meta name="renderer" content="ie-stand"> <!--//默认IE标准模式-->
+    <!--允许跨域访问-->
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+
+    <title>HTML5</title>
+
+</head>
+<body>
+
+
+<!--HTML5 中，仅支持 "border" 属性，并且只允许使用值 "1" 或 ""。-->
+<table border="1">
+
+    <caption>表格标题</caption>
+
+    <!--定义表格列的组-->
+    <colgroup>
+        <!--定义用于表格列的属性-->
+        <col span="2" style="background-color:red">
+        <col style="background-color:yellow">
+    </colgroup>
+
+    <thead>
+    <tr>
+        <th>属性</th>
+        <th>值</th>
+        <th>描述</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td>border</td>
+        <td>1
+            ""
+        </td>
+        <td>规定表格单元是否拥有边框。</td>
+    </tr>
+    <tr>
+        <td>border</td>
+        <td>1
+            ""
+        </td>
+        <td>规定表格单元是否拥有边框。</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td> tfoot</td>
+        <td>tfoot</td>
+        <td>tfoot</td>
+    </tr>
+    </tfoot>
+
+</table>
+
+
+<h3>新标签：datalist</h3>
+指定一个预先定义的输入控件选项列表
+<input list="browsers">
+
+<datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+</datalist>
+
+<h3>新标签：keygen</h3>
+带有 keygen 字段的表单
+<form action="demo_keygen.asp" method="get">
+    用户名: <input type="text" name="usr_name" />
+    加密: <keygen name="security" />
+    <input type="submit" />
+</form>
+
+<h3>新标签：output</h3>
+定义一个计算结果
+
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+    <input type="range" id="a" value="50">100
+    +<input type="number" id="b" value="50">
+    =<output name="x" for="a b"></output>
+</form>
+<a href="session_storage.html">11</a>
+<script type="text/javascript">
+//http://jerryzou.com/posts/cookie-and-web-storage/
+    if( sessionStorage.hits ){
+        sessionStorage.hits = Number(sessionStorage.hits) +1;
+    }else{
+        sessionStorage.hits = 1;
+    }
+    document.write("Total Hits :" + sessionStorage.hits );
+</script>
+<p>Refresh the page to increase number of hits.</p>
+<p>Close the window and open it again and check the result.</p>
+
+</body>
+</html>

@@ -6,7 +6,7 @@
 
     function shake ( option ) {
 
-        var e = option.element  ,
+        var e = option.element ,
             time = option.time || 500 ,
             distance = option.distance || 5;
 
@@ -14,9 +14,7 @@
         e.style.position = "relative";
         //开始时间
         var start = (new Date ()).getTime ();
-
         animate ();
-
         function animate () {
             var now = (new Date ()).getTime ();
             var elapsed = now - start;
@@ -45,7 +43,7 @@
     window.animate = {
         shake : function ( option ) {
             shake = _before.call ( shake , function () {
-                return option.beforeBack.call ( option.element  );
+                return option.beforeBack.call ( option.element );
             } );
             shake ( option );
         }
