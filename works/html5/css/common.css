@@ -1,9 +1,317 @@
 
-.pub-wrapper{
-    width: 1100px;
+.pub-wrapper {
     margin: 0 auto;
+    width: 1100px;
+
 }
 
-.pub-header{
+/*头部*/
+.pub-header {
     height: 110px;
+
 }
+
+.pub-header .header-log {
+    margin-top: 40px;
+    width: 81px;
+    height: 30px;
+    background: url("img/header_logo.png");
+}
+
+.pub-header .header-nav {
+    margin-top: 50px;
+
+}
+
+.pub-header .header-nav .item {
+    float: left;
+    margin-left: 50px;
+}
+
+.pub-header .header-nav .item a {
+    display: inline-block;
+    font-family: aleo-regular;
+
+}
+
+/*banner*/
+
+.pub-banner {
+    position: relative;
+    height: 570px;
+    min-width: 1100px;
+    color: #fff;
+    background: url("img/banner-bg.jpg") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.pub-banner .banner-matte {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #2b2b2b;
+    opacity: .8;
+}
+
+.pub-banner .banner-caption {
+    position: relative;
+    margin-top: 210px;
+    text-align: center;
+    z-index: 2;
+}
+
+.pub-banner .banner-caption h2 {
+    font-family: wcmanonegrabta;
+    font-size: 100px;
+    font-weight: normal;
+}
+
+.pub-banner .banner-caption p {
+    font-family: aleo-regular;
+    font-size: 16px;
+}
+
+.pub-banner .banner-caption p:before, .pub-banner .banner-caption p:after {
+    content: ' ';
+    width: 40px;
+    height: 1px;
+    background-color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pub-banner .banner-caption p:before {
+    margin-right: 28px;
+}
+
+.pub-banner .banner-caption p:after {
+    margin-left: 28px;
+}
+
+/*菜单*/
+
+.pub-menu {
+    margin-bottom: 100px;
+    min-width: 1100px;
+    border-top: 4px solid #f34949;
+    text-align: center;
+
+}
+
+.pub-menu .menu-title {
+    margin-bottom: 80px;
+}
+
+.pub-menu .menu-title h3 {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 155px;
+    height: 75px;
+    background-color: #f34949;
+    font-family: aleo-bold;
+    font-size: 20px;
+    color: #fff;
+
+}
+
+.pub-menu .menu-title h3:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    width: 0;
+    border-width: 0 78px 10px 78px;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom-color: #fff;
+}
+
+.pub-menu .men-list-box {
+
+}
+
+.pub-menu .menu-list {
+    width: 490px;
+    text-align: left;
+}
+
+.pub-menu .menu-list li {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.pub-menu .list-title {
+    font-family: aleo-regular;
+    font-size: 16px;
+    font-weight: normal;
+    padding-right: 42px;
+    background-color: #fff;
+}
+
+.pub-menu .list-desc {
+    font-family: aleo-lightitalic;
+    font-size: 12px;
+}
+
+.pub-menu .list-price {
+    font-family: aleo-regular;
+    font-weight: normal;
+    padding-left: 42px;
+    background-color: #fff;
+}
+
+.pub-menu .list-line {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 10px;
+    background-color: #e3e1e1;
+    vertical-align: middle;
+    z-index: -1;
+}
+
+.pub-menu .menu-more {
+    text-align: center;
+}
+
+.pub-menu .more-box {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 7px 14px;
+
+    border: 1px solid #d7d5d5;
+    font-family: aleo-regular;
+    color: #b7b7b7;
+}
+
+.pub-menu .more-box hr {
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    vertical-align: middle;
+    margin: 0 12px;
+}
+
+.pub-menu .more-box i {
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+/*菜肴*/
+
+.pub-dishes{
+    padding: 100px 0;
+}
+
+.pub-dishes .dishes-title {
+    display: inline-block;
+    font-family: aleo-bold;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.pub-dishes .dishes-separator {
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    width: 200px;
+    height: 1px;
+    background-color: #e5e3e3;
+}
+
+
+.pub-dishes .dishes-slider-list{
+    margin-top: 78px;
+    width: 9999px;
+}
+
+.pub-dishes .list-item {
+    float: left;
+    margin: 0 60px 0 0;
+    width: 230px;
+}
+
+.pub-dishes .list-img {
+    display: block;
+    width: inherit;
+    height: 200px;
+}
+
+.pub-dishes .list-title {
+
+    width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: normal;
+}
+
+.pub-dishes .list-price{
+
+}
+
+
+
+.pub-dishes figcaption {
+    padding-top: 28px;
+    font-family: aleo-light;
+    font-size: 16px;
+}
+
+.pub-dishes .list-raty{
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.pub-dishes .list-raty li{
+    display: inline-block;
+    color: #dedede;
+    padding-right: 4px;
+}
+
+.pub-dishes .list-raty li.active{
+    color: #f1df1a;
+}
+.pub-dishes .dishes-slider-nav{
+    position: absolute;
+    top:10px;
+    right: 0;
+}
+
+.pub-dishes .dishes-slider-nav a{
+    margin-left: 10px;
+    color: #dedede;
+}
+
+.pub-dishes .dishes-slider-nav a.active{
+    color: #9b9b9b;
+}
+
+
+.pub-dishes .dishes-slider-nav i{
+    font-size: 12px;
+
+}
+
+
+.pub-dishes .dishes-divide-3{
+    width: 33.3333333333333%;
+    height: 100%;
+    text-align: center;
+}
+.pub-dishes .dishes-gallery{
+    margin-top: 78px;
+    height:432px;
+    background-color: #b7b7b7;
+}
+
+.pub-dishes .divide-hhalf{
+    height: 215px;
+}
+
