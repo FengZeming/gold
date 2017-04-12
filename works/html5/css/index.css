@@ -1,0 +1,42 @@
+/*banner*/
+
+.pub-banner {
+    height: 570px;
+    color: #fff;
+    background: url("img/banner-bg.jpg") no-repeat;
+    background-size: cover;
+
+}
+
+.pub-banner .banner-matte {
+    background-color: #2b2b2b;
+    opacity: .8;
+}
+
+.pub-banner .banner-caption {
+    margin-top: 210px;
+    text-align: center;
+    z-index: 1;
+}
+
+.pub-banner .banner-caption h2 {
+    font-size: 100px;
+    font-weight: normal;
+}
+
+.pub-banner .banner-caption p:before, .pub-banner .banner-caption p:after {
+    content: ' ';
+    display: inline-block;
+    width: 40px;
+    height: 1px;
+    background-color: #fff;
+    vertical-align: middle;
+}
+
+.pub-banner .banner-caption p:before {
+    margin-right: 28px;
+}
+
+.pub-banner .banner-caption p:after {
+    margin-left: 28px;
+}

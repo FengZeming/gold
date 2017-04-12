@@ -2,13 +2,11 @@
 .pub-wrapper {
     margin: 0 auto;
     width: 1100px;
-
 }
 
 /*头部*/
 .pub-header {
     height: 110px;
-
 }
 
 .pub-header .header-log {
@@ -20,7 +18,6 @@
 
 .pub-header .header-nav {
     margin-top: 50px;
-
 }
 
 .pub-header .header-nav .item {
@@ -30,66 +27,18 @@
 
 .pub-header .header-nav .item a {
     display: inline-block;
-    font-family: aleo-regular;
-
+    padding-bottom: 10px;
+    border-bottom: 2px solid #fff;
+    letter-spacing: .5px;
+    transition: all .3s linear;
 }
 
-/*banner*/
-
-.pub-banner {
-    position: relative;
-    height: 570px;
-    min-width: 1100px;
-    color: #fff;
-    background: url("img/banner-bg.jpg") no-repeat;
-    background-size: cover;
-    overflow: hidden;
+.pub-header .header-nav .item a:hover {
+    color: #f34949;
+    border-bottom: 2px solid #f34949;
 }
 
-.pub-banner .banner-matte {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #2b2b2b;
-    opacity: .8;
-}
 
-.pub-banner .banner-caption {
-    position: relative;
-    margin-top: 210px;
-    text-align: center;
-    z-index: 2;
-}
-
-.pub-banner .banner-caption h2 {
-    font-family: wcmanonegrabta;
-    font-size: 100px;
-    font-weight: normal;
-}
-
-.pub-banner .banner-caption p {
-    font-family: aleo-regular;
-    font-size: 16px;
-}
-
-.pub-banner .banner-caption p:before, .pub-banner .banner-caption p:after {
-    content: ' ';
-    width: 40px;
-    height: 1px;
-    background-color: #fff;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.pub-banner .banner-caption p:before {
-    margin-right: 28px;
-}
-
-.pub-banner .banner-caption p:after {
-    margin-left: 28px;
-}
 
 /*菜单*/
 
@@ -205,7 +154,7 @@
 
 /*菜肴*/
 
-.pub-dishes{
+.pub-dishes {
     padding: 100px 0;
 }
 
@@ -214,6 +163,7 @@
     font-family: aleo-bold;
     font-size: 20px;
     font-weight: normal;
+    letter-spacing: 1px;
 }
 
 .pub-dishes .dishes-separator {
@@ -225,8 +175,7 @@
     background-color: #e5e3e3;
 }
 
-
-.pub-dishes .dishes-slider-list{
+.pub-dishes .dishes-slider-list {
     margin-top: 78px;
     width: 9999px;
 }
@@ -252,11 +201,9 @@
     font-weight: normal;
 }
 
-.pub-dishes .list-price{
+.pub-dishes .list-price {
 
 }
-
-
 
 .pub-dishes figcaption {
     padding-top: 28px;
@@ -264,54 +211,125 @@
     font-size: 16px;
 }
 
-.pub-dishes .list-raty{
+.pub-dishes .list-raty {
     margin-top: 10px;
     font-size: 12px;
 }
 
-.pub-dishes .list-raty li{
+.pub-dishes .list-raty li {
     display: inline-block;
     color: #dedede;
     padding-right: 4px;
 }
 
-.pub-dishes .list-raty li.active{
+.pub-dishes .list-raty li.active {
     color: #f1df1a;
 }
-.pub-dishes .dishes-slider-nav{
+
+.pub-dishes .dishes-slider-nav {
     position: absolute;
-    top:10px;
+    top: 10px;
     right: 0;
 }
 
-.pub-dishes .dishes-slider-nav a{
+.pub-dishes .dishes-slider-nav a {
     margin-left: 10px;
     color: #dedede;
 }
 
-.pub-dishes .dishes-slider-nav a.active{
+.pub-dishes .dishes-slider-nav a.active {
     color: #9b9b9b;
 }
 
-
-.pub-dishes .dishes-slider-nav i{
+.pub-dishes .dishes-slider-nav i {
     font-size: 12px;
 
 }
 
-
-.pub-dishes .dishes-divide-3{
-    width: 33.3333333333333%;
+.pub-dishes .dishes-divide-3 {
+    width: 366px;
     height: 100%;
     text-align: center;
 }
-.pub-dishes .dishes-gallery{
+
+.pub-dishes .dishes-gallery {
     margin-top: 78px;
-    height:432px;
+    height: 432px;
     background-color: #b7b7b7;
 }
 
-.pub-dishes .divide-hhalf{
+.pub-dishes .divide-hhalf {
     height: 215px;
 }
 
+.pub-dishes img {
+    transition: all .3s linear;
+}
+
+.pub-footer {
+    margin-top: 100px;
+    padding: 100px 0;
+    background-color: #3b3b3b;
+    color: #fff;
+    font-size: 0;
+
+}
+
+.pub-footer .footer-contact {
+    display: inline-block;
+    width: 230px;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+.pub-footer .footer-contact:not(:last-child) {
+    margin-right: 60px;
+}
+
+.pub-footer .footer-contact dt {
+
+    font-family: aleo-regular;
+}
+
+.pub-footer .footer-contact dd {
+    font-family: aleo-light;
+}
+
+.pub-footer .footer-contact dd:last-child {
+    font-family: aleo-bold;
+}
+
+.pub-footer .footer-logo {
+
+    width: 81px;
+    height: 30px;
+    background: url("img/footer_logo.png") no-repeat;
+
+}
+
+.pub-footer .footer-Copyright {
+    font-size: 14px;
+    font-family: aleo-light;
+}
+
+.pub-footer .footer-Copyright dd:last-child {
+    font-family: aleo-light;
+}
+
+.pub-footer .footer-Copyright a {
+    font-family: aleo-bold;
+    color: #fff;
+}
+
+.pub-footer .footer-Copyright a:hover {
+    color: #fff;
+}
+
+.dec-inactive {
+    opacity: 0.7;
+}
+
+.dec-active {
+    opacity: 1;
+}
