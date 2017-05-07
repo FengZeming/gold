@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    function oodlify ( s ) {
+        return s.replace ( /[aeiou]/g , 'oodle' );
+    }
+    function izzlify(s) {
+        return s.replace(/[aeiou]+/g, 'izzle');
+    }
+    var fellowship = [
+        'frodo',
+        'sam',
+        'gandalf',
+        'aragorn',
+        'boromir',
+        'legolas',
+        'gimli',
+    ];
+
+    var band = [
+        'John',
+        'Paul',
+        'George',
+        'Ringo',
+    ];
+    var input = [
+        'John',
+        'Paul',
+        'George',
+        'Ringo',
+    ];
+
+    var bandoodle     = band.map(oodlify);
+    var floodleship   = fellowship.map(oodlify);
+    var bandizzle     = band.map(izzlify);
+    var fellowshizzle = fellowship.map(izzlify);
+
+    console.log(bandoodle);
+    console.log(bandizzle);
+
+
+</script>
+
+</body>
+</html>
