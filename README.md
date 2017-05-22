@@ -6,4 +6,5 @@
  
  ###  cache
 
- - [web-storage-cache](https://github.com/WQTeam/web-storage-cache)
+ - [web-storage-cache](https://github.com/WQTeam/web-storage-cache) 
+   对localStorage 和sessionStorage 进行了扩展，添加了超时时间，序列化方法
