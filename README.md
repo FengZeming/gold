@@ -4,6 +4,6 @@
 
 > # 前端组件
  
- ###. cache
+ ###  cache
 
- -[web-storage-cache](https://github.com/WQTeam/web-storage-cache)
+ - [web-storage-cache](https://github.com/WQTeam/web-storage-cache)
